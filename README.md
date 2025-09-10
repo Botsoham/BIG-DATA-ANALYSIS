@@ -75,4 +75,4 @@ This validated the principle that parallelism helps scalability but must be tune
 
 *OUTPUT*
 
-<img width="409" height="137" alt="Image" src="https://github.com/user-attachments/assets/82e515bf-4485-4a8c-8dc8-81b0b385357c" />
+<img width="496" height="794" alt="Image" src="https://github.com/user-attachments/assets/61634915-19b4-40c8-b4a8-705c94e9984a" />
