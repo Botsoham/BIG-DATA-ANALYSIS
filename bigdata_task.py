@@ -93,7 +93,7 @@ def scalability_demo():
             pyspark_analysis(dataset_path, output_dir=f"output/pyspark_{rows}_{p}", num_partitions=p)
             duration = time.time() - start
             results.append({"rows": rows, "partitions": p, "runtime_sec": round(duration,2)})
-            print(f"✅ Rows={rows}, Partitions={p}, Time={duration:.2f}s")
+            print(f" Rows={rows}, Partitions={p}, Time={duration:.2f}s")
 
 
     df = pd.DataFrame(results)
@@ -117,3 +117,4 @@ def scalability_demo():
 
 if __name__ == "__main__":
     scalability_demo()
+
