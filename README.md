@@ -49,3 +49,5 @@ Increasing partitions reduced runtime up to a point, after which the benefit pla
 This validated the principle that parallelism helps scalability but must be tuned carefully.
 
 *OUTPUT*
+
+<img width="409" height="137" alt="Image" src="https://github.com/user-attachments/assets/82e515bf-4485-4a8c-8dc8-81b0b385357c" />
