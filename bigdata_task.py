@@ -78,7 +78,7 @@ def pyspark_analysis(csv_path, output_dir='output/pyspark', spark_master_local_c
     top_products.toPandas().to_csv(os.path.join(output_dir, 'top_products.csv'), index=False)
 
     spark.stop()
-
+    
 def scalability_demo():
     """Run scalability tests with different dataset sizes and partitions."""
     results = []
@@ -95,10 +95,9 @@ def scalability_demo():
             results.append({"rows": rows, "partitions": p, "runtime_sec": round(duration,2)})
             print(f" Rows={rows}, Partitions={p}, Time={duration:.2f}s")
 
-
     df = pd.DataFrame(results)
     df.to_csv("output/scalability_results.csv", index=False)
-    print("\n📊 Scalability benchmark saved to output/scalability_results.csv")
+    print("\n Scalability benchmark saved to output/scalability_results.csv")
 
     try:
         import matplotlib.pyplot as plt
@@ -111,10 +110,11 @@ def scalability_demo():
         plt.title("Scalability Demo")
         plt.legend()
         plt.savefig("output/scalability_plot.png")
-        print("📈 Scalability plot saved to output/scalability_plot.png")
+        print(" Scalability plot saved to output/scalability_plot.png")
     except Exception:
         pass
-
+        
 if __name__ == "__main__":
     scalability_demo()
+
 
