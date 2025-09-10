@@ -1,0 +1,9 @@
+pandas
+numpy
+faker
+pyspark
+matplotlib
+dask[complete]
+distributed
+scikit-learn
+dask-ml
