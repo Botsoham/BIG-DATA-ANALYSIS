@@ -28,7 +28,7 @@ rating – Product rating given by the customer.
 The dataset was generated in chunks to simulate how real-world large datasets are often stored in multiple files. I used NumPy and Pandas to generate realistic data distributions (e.g., higher probability of purchases from certain countries or higher frequency of mobile users).
 I created datasets of different sizes: 50,000 rows, 100,000 rows, and 200,000 rows. These varying sizes were later used to test scalability.
 
-DATA PROCESSING WITH PYSPARK
+*DATA PROCESSING WITH PYSPARK*
 
 For the analysis, I used PySpark. Spark is known for its ability to process huge datasets in a distributed manner, both on clusters and on a single machine. In my case, I ran Spark in local mode with multiple cores to simulate distributed processing.
 The key processing steps were:
@@ -38,7 +38,7 @@ Partitioning & Caching – Repartitioned data by country with varying numbers of
 Aggregation – Calculated top 10 products by total sales across the dataset.
 Export Results – Saved results to CSV files inside an output directory.
 
-THE CORE part of this project was the scalability test. I wanted to demonstrate how runtime changes as we scale data and adjust partitions. To do this, 
+*THE CORE* part of this project was the scalability test. I wanted to demonstrate how runtime changes as we scale data and adjust partitions. To do this, 
 I Generated datasets of 50k, 100k, and 200k rows.
 Ran the same aggregation task with 10, 50, and 100 partitions.
 Measured the execution time for each combination.
@@ -48,4 +48,4 @@ Increasing dataset size increased runtime.
 Increasing partitions reduced runtime up to a point, after which the benefit plateaued or even worsened due to shuffle overhead.
 This validated the principle that parallelism helps scalability but must be tuned carefully.
 
-OUTPUT
+*OUTPUT*
