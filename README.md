@@ -77,9 +77,10 @@ This validated the principle that parallelism helps scalability but must be tune
 # RUN THE CODE 
 python bigdata_task.py
 
+
 # IMPORTANT 
 Java 17 requirement for PySpark.
-
+if not use google collab
 # OUTPUT
 
 <img width="496" height="794" alt="Image" src="https://github.com/user-attachments/assets/61634915-19b4-40c8-b4a8-705c94e9984a" />
