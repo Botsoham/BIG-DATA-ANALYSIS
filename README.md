@@ -82,5 +82,5 @@ python bigdata_task.py
 Java 17 requirement for PySpark.
 if not use google collab
 # OUTPUT
-
+<img width="505" height="770" alt="Image" src="https://github.com/user-attachments/assets/7a92a29a-d181-48c5-800c-1e61af461ff1" />
 
